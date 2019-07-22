@@ -1,0 +1,15 @@
+itle: "Machine Learning"
+author: "Ladesha Jenkins"
+header-includes:
+    - \usepackage{setspace}\doublespacing
+output:
+  word_document: default
+  html_document: default
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+The original research question is “What are the most significant factors that affect aggressive behavior in children?” To formulate the machine learning problem, the result of the search is intended to find and determine the aggression level of the child in a household with five different factors. This is a supervised machine learning problem.  This is a supervised machine learning problem because there are input variables and output variables. There is a multi-variable input for the x- values, and there is one output variable. The input variables are the independent variables used to determine the output variable which is the dependent variable. The dependent variable is Aggression. This is a regression type of supervised machine learning problem. It is a regression type of machine learning problem because the output variable provides a real value. The machine learning problem for this search is “Given the circumstances of the household situation of a child, identify the level of aggression that will be presented in this child’s behavior. Given a model of projected household circumstances according to each factor a parent will be able to determine his/her children’s aggression levels. After the aggression levels have been determined, the parent can use the aggression level to adjust how each factor in his/her household should be corrected to fit their ideal aggression level that he/she plan to see in the child in the future. The model can help a parent determine what area the child needs help in as far as the independent variables: parental approach, nutrition, sibling’s aggression, video viewing, and electronic games. 
+To create the linear regression models, the dataset had to be first split into 80 percent of the data and 20 percent of the data.  For the first model, the structure function and the summary function was used to determine the p-value of the model with using one independent variable to the dependent variable. The p value is the observed significance level of the hypothesis. The idea is to get the p-value to be small because p values range from 0 to 1. A small p-value (typically ≤ 0.05) indicates strong evidence against the null hypothesis, so you reject the null hypothesis .A large p-value (> 0.05) indicates weak evidence against the null hypothesis, so you fail to reject the null hypothesis. In the first model the p-value was 1.763e-05. The second model included the same functions summary, and structure but with the variables videos and electronic games, and the p-value was 6.29e-08. In the third model, the variables included all the independent variables, and the p-value was 4.074e-09. The p-values of the models determined that these were not good models to use for this search so new models would need to be used to get a better understanding of the data.
